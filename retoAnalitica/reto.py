@@ -19,16 +19,7 @@ sns.histplot(data=df, x='hour', hue='weekday', multiple='stack')
 #%%
 sns.violinplot(data=df_percent)
 #La mayorìa de las compras fueron variadas, mientras que menos fueron totalmente de una categoría
-#%%
-heat_df = df[['discount%', 'Food%']]
-sns.heatmap(heat_df.corr(), annot=True)
 
-#%%
-sns.scatterplot(data=df, y = "discount%", x = "Food%")
-#%%
-#Descuento contra total de items.
-sns.scatterplot(data=df, y="discount%", x="total_items")
-#Mientras menos items, más descuentos.
 # %%
 #Compras por día
 sns.displot(x = 'weekday', data = df)
