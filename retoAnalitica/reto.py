@@ -11,3 +11,8 @@ df.tail()
 sns.scatterplot(data=df1, x="discount%", y="total_items")
 #No parece que haya una relacion importante
 # %%
+#Compras por día
+sns.displot(x = 'weekday', data = df)
+#Hay más compras en el día 1, y disminuyen hasta el día 6, para
+#aumentar de nuevo el día 7
+# %%
