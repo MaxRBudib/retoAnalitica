@@ -31,3 +31,8 @@ sns.displot(x = 'weekday', data = df)
 sns.displot(x = 'hour', data = df)
 #La mayoría de las compras se hacen a medio día y después de las 10
 # %%
+
+df_percent = pd.melt(df[['Food%', 'Fresh%', 'Drinks%', 'Home%', 'Beauty%', 'Health%', 'Baby%', 'Pets%']])
+df_percent
+sns.boxplot(x='variable', y='value', data=df_percent)
+# %%
