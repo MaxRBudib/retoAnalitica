@@ -8,7 +8,7 @@ df.tail()
 
 # %%
 #Descuento contra total de items.
-sns.scatterplot(data=df1, x="discount%", y="total_items")
+sns.scatterplot(data=df, x="discount%", y="total_items")
 #No parece que haya una relacion importante
 # %%
 #Compras por día
